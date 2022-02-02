@@ -1,19 +1,12 @@
 # Desafio 02: Recibos de Pagamento
 
-## Objetivo
+## Modelo utilizado
 
-Treinar um modelo NLP que extraia de recibos de pagamentos, as palavras chaves e seus respectivos valores.
+Foi usado o modelo pré-treinado LayoutLMv2 proposto por Yang Xu, Yiheng Xu, Tengchao Lv, Lei Cui, Furu Wei, Guoxin Wang, Yijuan Lu, Dinei Florencio, Cha Zhang, Wanxiang Che, Min Zhang e Lidong Zhou, que foi treinado para extração de informações de documentos digitalizados, classificação de imagens de documentos e resposta visual de perguntas. O modelo foi importado da Biblioteca Transformers, que fornece o modelo citado de forma fácil, além de várias ferramentas para ajustar o conjunto de dados.
 
-## Tarefas
+## Preparando e rodando o modelo
 
-- Realizar a tarefa 3 do [desafio SROIE](https://rrc.cvc.uab.es/?ch=13&com=tasks) do Robust Reading
-- Apresentar e discutir os resultados do modelo treinado no dataset de teste durante a entrevista técnica 
-
-## Extras
-
-- Usar um segundo framework para treinar um segundo modelo no dataset da tarefa 3 do desafio SROIE 
-- Comparar os resultado com os obtidos pelo primeiro modelo e explicar o porquê da diferença
-
-## Notas
-
-- O dataset está disponível publicamente na tarefa SRIOE, sendo necessário apenas criar uma conta no site
+- Os dados originais estão disponívéis publicamente na tarefa 3 do [desafio SROIE](https://rrc.cvc.uab.es/?ch=13&com=tasks)
+- Para facilitar, os arquivos de treino devem ser renomeados no formato 'input(x).jpg' e 'output(x).txt.
+- Os arquivos já renomeados podem ser baixados [nesse link](https://drive.google.com/file/d/1fnClh5sEa--jWS1GkEYHvN5hpjER_ysQ/view?usp=sharing)
+- Os arquivos devem ser colocados em uma pasta do drive, e o endereço dessa pasta deve ser colocado na variável ```root_path```, na primeira célula do [notebook](./DesafioMostQI.ipynb)
